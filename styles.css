@@ -1,0 +1,88 @@
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsl(0, 0%, 95%);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+main {
+    width: 85vw;
+    max-width: calc(375px * 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem auto;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+section {
+    padding: 3rem;
+}
+
+#s1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#s2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#s3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#s1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+#s2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+#s3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    padding: 0.8rem 2rem;
+    border: 0.3rem solid white;
+    border-radius: 2rem;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+#s1 button:hover, #s2 button:hover, #s3 button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media (min-width: 1050px) {
+    main {
+        flex-direction: row;
+        max-width: 1050px;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    button {
+        margin-top: 4rem;
+    }
+}
